@@ -244,6 +244,9 @@ small{
     .blog-card{
       width: 100%;
     }
+    .download-btn {
+      margin-top: 1rem;
+    }
     .faq-content > h2{
       font-size: 1.5rem
     }
@@ -296,10 +299,6 @@ small{
   .faq-content,
   .faq-image {
     width: 100%;
-  }
-
-  .download-btn{
-    margin-top: 1rem;
   }
 
   .footer-logo{
