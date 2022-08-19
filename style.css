@@ -30,6 +30,7 @@ nav{
   padding: .2rem .5rem;
   background-color: white;
   color: black;
+  cursor: pointer;
 }
 header{
   background-color: #4518fe;
@@ -48,7 +49,7 @@ header{
   padding: 1rem 2rem
 
 }
-.header-text h2{
+.header-title{
   font-size: 3rem;
 }
 .header-text p{
@@ -81,6 +82,8 @@ header{
   padding: 1rem;
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .cards :first-child{
   background-color:hsl(0deg 0% 100%);
@@ -100,6 +103,7 @@ header{
 .blog-cards{
   display: flex;
   background-color:hsl(240deg 17% 98%);
+  flex-wrap: wrap;
 }
 .blog-card{
   display: flex;
@@ -208,4 +212,105 @@ small{
 .footer-right{
   display:flex;
   gap: 1rem;
+}
+
+@media only screen and (max-width:768px) {
+    .header-title{
+      font-size: 1.25rem;
+      width: 60%;
+    }
+    .header-content p{
+      width: 60%;
+    }
+    .header-image{
+      top: 10%;
+      width: 40%
+    }
+    .logo{
+      height: 40px;
+    }
+    .nav-item{
+      font-size: 0.75rem
+    }
+    .api{
+      padding:1rem;
+    }
+    .api-heading {
+      font-size: 2rem;
+    }
+    .blog-heading h1{
+      font-size: 2rem;
+    }
+    .blog-card{
+      width: 100%;
+    }
+    .faq-content > h2{
+      font-size: 1.5rem
+    }
+    .faq-content>h4,
+    .faq-para {
+      font-size: .75rem
+    }
+}
+
+@media only screen and (max-width:420px) {
+  .logo{
+    height: 30px;
+  }
+  .nav-item{
+    display:none;
+  }
+  .nav-item-active {
+    font-size: 0.75rem;
+  }
+  .header-image{
+    position: relative;
+    width: 95%;
+  }
+  .header-title {
+    font-size: 1.25rem;
+    width: 100%;
+  }
+
+  .header-content p,
+  .header-content h2 {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .companies, 
+  .blog-content{
+    padding: 1rem;
+  }
+
+  .blog-heading h1 {
+    font-size: 1rem;
+  }
+
+  .blog-card,
+  .faq-section,
+  .download-section{
+    display: block;
+  }
+
+  .faq-content,
+  .faq-image {
+    width: 100%;
+  }
+
+  .download-btn{
+    margin-top: 1rem;
+  }
+
+  .footer-logo{
+    height: 20px;
+  }
+
+  .list,
+  .logos-list{
+    display: block;
+  }
+  .list-items{
+    padding: 0.5rem;
+  }
 }
